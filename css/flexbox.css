@@ -1,0 +1,86 @@
+/*FlexBox no Cabeçalho*/
+.cabecalhoPrincipal .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cabecalhoPrincipal-nav {
+	display: flex;
+}
+
+/*FlexBox no rodapé*/
+
+.rodapePrincipal-patrocinadores .container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+	display: flex;
+	align-items: center;
+	justify-content: space-around ;
+	width: 70%;
+	margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm{
+	width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+	display: flex;
+}
+
+/*FlexBox no Mapa de cursos*/
+
+.rodapePrincipal-navMap-list{
+	display: flex;
+/*	flex-direction: column; /*Direção do flex ao inves de se comportar como um do lado do outro (row) se comportar como coluna(column)*/
+/*	flex-wrap: wrap; /*para quando quebrar passar para proxima linha, ou seja ir pro lado do outro*/
+	flex-flow: column wrap;
+	height: 253px;
+}
+
+/*FlexBox no Nossos cursos*/
+
+.conteudoPrincipal-cursos{
+	display: flex;
+	flex-wrap: wrap; /*Para quebrar linha caso nao tenha tamanho para ficarem lateralmente*/
+	justify-content: flex-start;
+}
+
+/*Editando os links da area nossos cursos (Grid)*/
+
+.conteudoPrincipal-cursos-link{
+	width: 23%;
+	margin: 1%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n){
+	margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1){
+	margin-right: 0;
+}
+
+.videoSobre .container{
+	display: flex;
+}
+
+.videoSobre-sobre{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1; /*O flex-grow pega e distribui no elemento ou envolta exclusivo para elementos filhos*/
+
+}
+
+.videoSobre-sobre-list{
+	flex-grow: 1;
+}
+
+.videoSobre-video{
+	flex-grow: 0.4;
+}
